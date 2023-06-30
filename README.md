@@ -45,10 +45,14 @@ Načítání vstupního souboru a následný výpis:
 
 1. Implementujte funkce:
 
-*void init_cluster(struct cluster_t *c, int cap)*;
-*void clear_cluster(struct cluster_t *c)*;
-*void append_cluster(struct cluster_t *c, struct obj_t obj)*;
-*int load_clusters(char *filename, struct cluster_t **arr)*;
+*void init_cluster(struct cluster_t *c, int cap)* ;
+
+*void clear_cluster(struct cluster_t *c)* ;
+
+*void append_cluster(struct cluster_t *c, struct obj_t obj)* ;
+
+*int load_clusters(char *filename, struct cluster_t **arr)* ;
+
 Funkce *init_cluster* slouží pro inicializaci shluku (alokaci požadovaného místa).
 
 Funkce *clear_cluster* slouží pro odstranění všech objektů ve shluku (dealokaci místa) a reinicializaci shluku s kapacitou 0.
@@ -61,49 +65,92 @@ Funkce *load_clusters* načítá ze vstupního souboru všechny objekty a uklád
 
 Vstupní soubor objekty
 
+
 count=20
+
 40 86 663
+
 43 747 938
+
 47 285 973
+
 49 548 422
+
 52 741 541
+
 56 44 854
+
 57 795 59
+
 61 267 375
+
 62 85 874
+
 66 125 211
+
 68 80 770
+
 72 277 272
+
 74 222 444
+
 75 28 603
+
 79 926 463
+
 83 603 68
+
 86 238 650
+
 87 149 304
+
 89 749 190
+
 93 944 835
 
 Načtení vstupního souboru a následné vypsání shluků:
 
 $ ./cluster objekty 20
+
 Clusters:
+
 cluster 0: 40[86,663]
+
 cluster 1: 43[747,938]
+
 cluster 2: 47[285,973]
+
 cluster 3: 49[548,422]
+
 cluster 4: 52[741,541]
+
 cluster 5: 56[44,854]
+
 cluster 6: 57[795,59]
+
 cluster 7: 61[267,375]
+
 cluster 8: 62[85,874]
+
 cluster 9: 66[125,211]
+
 cluster 10: 68[80,770]
+
 cluster 11: 72[277,272]
+
 cluster 12: 74[222,444]
+
 cluster 13: 75[28,603]
+
 cluster 14: 79[926,463]
+
 cluster 15: 83[603,68]
+
 cluster 16: 86[238,650]
+
 cluster 17: 87[149,304]
+
 cluster 18: 89[749,190]
+
 cluster 19: 93[944,835]
+
