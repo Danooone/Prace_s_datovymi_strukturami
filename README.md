@@ -45,13 +45,13 @@ Načítání vstupního souboru a následný výpis:
 
 1. Implementujte funkce:
 
-*void init_cluster(struct cluster_t *c, int cap)* ;
+void init_cluster(struct cluster_t *c, int cap)* ;
 
-*void clear_cluster(struct cluster_t *c)* ;
+void clear_cluster(struct cluster_t *c)* ;
 
-*void append_cluster(struct cluster_t *c, struct obj_t obj)* ;
+void append_cluster(struct cluster_t *c, struct obj_t obj)* ;
 
-*int load_clusters(char *filename, struct cluster_t **arr)* ;
+int load_clusters(char *filename, struct cluster_t **arr)* ;
 
 Funkce *init_cluster* slouží pro inicializaci shluku (alokaci požadovaného místa).
 
